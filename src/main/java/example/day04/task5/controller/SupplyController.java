@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/day04/task4")
+@RequestMapping("/day04/task5")
 public class SupplyController {
     private final SupplyService supplyService;
 
