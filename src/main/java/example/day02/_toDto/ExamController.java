@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping ("/day02/todto")
+@RequestMapping("/day02/todto")
 public class ExamController {
     private final ExamService examService;
 
-    @PostMapping
-    public boolean post(@RequestBody ExamDto examDto) {
-        return examService.post(examDto);
+    @PostMapping()
+    public boolean post( @RequestBody ExamDto examDto ){
+        return examService.post( examDto );
     }
 }

@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping ("/day02/persist")
+@RequestMapping("/day02/persis")
 @RequiredArgsConstructor
 public class ExamController {
     private final ExamService examService;
 
     @GetMapping
-    public void get() {
+    public void get(){
         examService.get();
     }
 }
