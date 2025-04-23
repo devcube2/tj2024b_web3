@@ -10,7 +10,7 @@ import java.util.List;
 @Table (name = "category")
 @Data@Builder
 @NoArgsConstructor@AllArgsConstructor
-public class CategoryEntity {
+public class CategoryEntity extends BaseTime {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private long cno; // 카테고리 식별번호
